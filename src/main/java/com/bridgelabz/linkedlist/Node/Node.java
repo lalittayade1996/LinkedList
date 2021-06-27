@@ -1,6 +1,6 @@
 package com.bridgelabz.linkedlist.Node;
 
-public class Node<K> implements INode <K> {
+public class Node<K> implements INode<K> {
 	private Node next;
 	private K key;
 
@@ -24,6 +24,4 @@ public class Node<K> implements INode <K> {
 	public void setNext(INode next) {
 		this.next = (Node<K>) next;
 	}
-
-	
 }
