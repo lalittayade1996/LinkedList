@@ -88,4 +88,17 @@ public class NodeTest {
 		boolean res = linkedList.head.equals(firstNode) && linkedList.head.getNext().equals(secondNode);
 		Assert.assertTrue(res);
 	}
+
+	@Test
+	public void Given3Numbers_WhenSearch_AnyNumber_InLinkedList() {
+		Node<Integer> firstNode = new Node<Integer>(56);
+		Node<Integer> secondNode = new Node<Integer>(30);
+		Node<Integer> thirdNode = new Node<Integer>(70);
+		NewLinkList linkedList = new NewLinkList();
+		linkedList.add(firstNode);
+		linkedList.append(secondNode);
+		linkedList.append(thirdNode);
+		boolean res = linkedList.search(30);
+		Assert.assertTrue(res);
+	}
 }
